@@ -7,6 +7,7 @@
 #include <cmath>
 #include <ctime>
 #include <string>
+#include "Matrix.h"
 
 using namespace std;
 
@@ -54,9 +55,34 @@ void createFibonacci()
 
 int main()
 {
-	int results[10];
-	int length = 10;
-	createFibonacci();
+	Matrix A(2, 2);
+	Matrix B(2, 2);
+
+	A = B;
+
+	Matrix C(A);
+	Matrix D = B;
+
+	cout << A;
+	for (int i = 0; i < 5; i++)
+	{
+		cout << endl;
+	}
+	cout << B;
+	for (int i = 0; i < 5; i++)
+	{
+		cout << endl;
+	}
+	cout << C;
+	for (int i = 0; i < 5; i++)
+	{
+		cout << endl;
+	}
+	cout << D;
+	for (int i = 0; i < 5; i++)
+	{
+		cout << endl;
+	}
 	system("pause");
     return 0;
 }
