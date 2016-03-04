@@ -27,7 +27,6 @@ void printWordsToFile()
 	if (file.fail())
 	{
 		cout << "Error!" << endl;
-		system("pause");
 		exit(1);
 	}
 		
@@ -35,7 +34,6 @@ void printWordsToFile()
 	cout << str;
 	file << str;
 	file.close();
-	system("pause");
 }
 
 void readLinesFromFile()
@@ -75,7 +73,9 @@ void printOccurenceOfLetters()
 	char letter = 'a';
 	for (int i = 0; i < 26; i++)
 	{
-		cout << char(letter + i) << ": " << stats[i] << endl;
+		cout << char(letter + i) << ": " << stats[i] << '\t';
+		if (i % 3 == 0 && i != 0)
+			cout << endl;
 	}
 }
 
