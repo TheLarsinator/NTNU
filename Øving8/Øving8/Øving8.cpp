@@ -8,6 +8,8 @@
 #include <ctime>
 #include <string>
 #include <fstream>
+#include "CourseCatalog.h"
+#include "FileStats.h"
 
 using namespace std;
 
@@ -80,13 +82,27 @@ void printOccurenceOfLetters()
 }
 
 
+
+
 int main()
 {
-	printWordsToFile();
+	/*printWordsToFile();
 	system("pause");
 	readLinesFromFile();
 	system("pause");
 	printOccurenceOfLetters();
+	system("pause");*/
+
+	//CC subjects;
+	//subjects.set("TDT4110", "Informasjonsteknologi grunnkurs");
+	//subjects.set("TDT4102", "Prosedyre- og objektorienter programmering");
+	//subjects.set("TMA4100", "Matematikk 1");
+	//subjects.printCatalog();
+	//system("pause");
+	//subjects.set("TDT4102", "C++");
+	//subjects.printCatalog();
+
+	countWords();
 	system("pause");
 
     return 0;
