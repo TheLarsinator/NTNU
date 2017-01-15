@@ -1,2 +1,2 @@
 # NTNU
-Øvinger and shit
+Øvinger and stuff
